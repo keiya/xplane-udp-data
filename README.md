@@ -3,7 +3,7 @@
 X-Plane 10のネットワーク経由data inputを解析します。
 
 ## X-Planeが送信するUDPの構造
-バイトオーダーはLittle-endian
+バイトオーダーはLittle-endian(Pythonのsocketが変換しているのかも？)
 ```
 char[] 'DATA@' // 固定, 5bytes
 
