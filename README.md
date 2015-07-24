@@ -15,4 +15,7 @@ struct[] {
 }
 ```
 現在のところ、structの大きさはint[4bytes]+(float[4bytes]+align[4bytes])\*4にて36bytes。
-
+複数のdataを送るようにすると、このあとに4bytesのalignが入る。
+```
+'DATA@' + struct + (align) + struct + (align) + struct + (align) + ....
+```
